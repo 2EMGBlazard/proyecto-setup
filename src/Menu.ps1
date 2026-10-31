@@ -88,6 +88,9 @@ function Show-MainMenu {
     Write-Host " --- CERTIFICADOS LABORALES Y ANTECEDENTES (COLOMBIA) ---" -ForegroundColor Yellow
     Write-Host " [7] Abrir Portal de Certificados (Judiciales, Fiscales, RUT, EPS, Pensión)"
     Write-Host ""
+    Write-Host " --- CONVERSIÓN DE ARCHIVOS ---" -ForegroundColor Yellow
+    Write-Host " [8] Instalar Filee (Conversor de Archivos por Arrastre)"
+    Write-Host ""
     Write-Host " [0] Salir"
     Write-Host ""
 
@@ -123,6 +126,11 @@ function Show-MainMenu {
         }
         "7" {
             Open-CertificadosPortal
+            Read-Host "Presiona Enter para continuar..."
+            Show-MainMenu
+        }
+        "8" {
+            Install-SoftwarePackage -PackageId "Filee.Filee" -Name "Filee Conversor de Archivos"
             Read-Host "Presiona Enter para continuar..."
             Show-MainMenu
         }
