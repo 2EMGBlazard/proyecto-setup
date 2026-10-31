@@ -51,7 +51,7 @@ function Open-CertificadosPortal {
     if (Test-Path $localPath) {
         Start-Process $localPath
     } else {
-        Start-Process "https://raw.githack.com/2EMGBlazard/proyecto-setup/main/certificados.html"
+        Start-Process "https://cdn.jsdelivr.net/gh/2EMGBlazard/proyecto-setup@main/certificados.html"
     }
 }
 
