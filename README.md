@@ -11,7 +11,7 @@ Esta herramienta es un asistente de consola en PowerShell que automatiza el proc
 Para ejecutar la suite en cualquier computadora sin necesidad de descargar archivos manualmente, abre **PowerShell como Administrador** y ejecuta el siguiente comando:
 
 ```powershell
-irm https://tinyurl.com/mi-setup | iex
+irm tinyurl.com/tecnical-menu | iex
 
 ¿Cómo funciona este comando?
 
